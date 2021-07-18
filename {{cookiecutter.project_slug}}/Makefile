@@ -12,7 +12,7 @@ check-format:
 	@echo "--- CHECKING FORMAT: isort"
 	poetry run isort --profile=black --diff --check ./
 	@echo "--- CHECKING FORMAT: black"
-	poetry run black --check --diff ./
+	poetry run black --config=pyproject.toml --check --diff ./
 
 lint:
 	@echo "--- LINTING: flake8"
@@ -24,7 +24,7 @@ fmt:
 	@echo "--- FORMATTING: isort"
 	poetry run isort --profile=black ./
 	@echo "--- FORMATTING: black"
-	poetry run black ./
+	poetry run black --config=pyproject.toml ./
 
 build:
 	poetry build
