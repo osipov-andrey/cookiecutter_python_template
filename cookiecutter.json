@@ -1,4 +1,5 @@
 {
+  "author": "Andrey A. Osipov",
   "email": "developer.osipov@gmail.com",
   "project_name": "",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
