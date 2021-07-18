@@ -29,6 +29,13 @@ fmt:
 build:
 	poetry build
 
+init:
+	git init
+	git add .
+	ln -sf ../../pre-commit.sh .git/hooks/pre-commit
+	poetry install
+	make clean
+
 ci:
 	poetry install
 	make check-format
