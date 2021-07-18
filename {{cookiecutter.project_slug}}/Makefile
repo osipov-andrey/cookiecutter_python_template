@@ -32,6 +32,7 @@ build:
 init:
 	git init
 	git add .
+	chmod +x pre-commit.sh
 	ln -sf ../../pre-commit.sh .git/hooks/pre-commit
 	poetry install
 	make clean
