@@ -2,11 +2,11 @@ LIB_NAME = {{cookiecutter.project_slug}}
 
 test:
 	@echo "--- RUNNING UNIT-TESTS: pytest"
-	poetry run pytest
+	poetry run pytest ./tests
 
 coverage:
 	@echo "--- CHECKING COVERAGE: pytest"
-	poetry run pytest --cov=./$(LIB_NAME)
+	poetry run pytest --cov=./$(LIB_NAME) ./tests
 
 check-format:
 	@echo "--- CHECKING FORMAT: isort"
