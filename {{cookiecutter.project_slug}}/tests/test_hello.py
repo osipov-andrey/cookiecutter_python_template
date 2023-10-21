@@ -1,4 +1,4 @@
-from devops_platform_clients import hello
+from {{cookiecutter.project_slug}} import hello
 
 
 def test_hello():

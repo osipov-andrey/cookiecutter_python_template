@@ -1,4 +1,4 @@
-LIB_NAME = {{cookiecutter.project_slug}}
+LIB_NAME = bridge_e2e_tests
 
 test:
 	@echo "--- RUNNING UNIT-TESTS: pytest"
@@ -6,7 +6,7 @@ test:
 
 coverage:
 	@echo "--- CHECKING COVERAGE: pytest"
-	poetry run pytest --cov=./$(LIB_NAME) ./tests
+	poetry run coverage run -m pytest
 
 check-format:
 	@echo "--- CHECKING FORMAT: isort"

@@ -1,20 +1,20 @@
 [tool.poetry]
-name = "{{cookiecutter.project_slug}}"
+name = "bridge_e2e_tests"
 version = "0.1.0"
 description = ""
-authors = ["{{cookiecutter.author}} <{{cookiecutter.email}}>"]
+authors = ["Andrey A. Osipov <developer.osipov@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
 
 [tool.poetry.dev-dependencies]
-pytest = "^6.2.4"
+pytest = "^=7.4.2"
 mypy = "^0.910"
-black = "^21.6b0"
+black = "^=23.10.0"
 flake8 = "^=3.9.2"
 pytest-sugar = "^0.9.4"
 pytest-clarity = "^1.0.1"
-pytest-coverage = "^0.0"
+coverage = "^=7.3.2"
 isort = "^5.9.2"
 types-requests = "^2.25.0"
 flake8-absolute-import = "^1.0"
