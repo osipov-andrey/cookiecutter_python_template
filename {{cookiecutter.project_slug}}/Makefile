@@ -1,4 +1,4 @@
-LIB_NAME = bridge_e2e_tests
+LIB_NAME = {{cookiecutter.project_slug}}
 
 test:
 	@echo "--- RUNNING UNIT-TESTS: pytest"
